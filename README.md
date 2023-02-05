@@ -50,7 +50,7 @@ The final project developed during the course Introduction to Robotics taken in 
 
  <details>
  <summary> 5) Breadboard </summary>
- Beware of the L293D position on the breadboard. It should be facing forward (the front part of the driver has a little dot carved in the center / slighly to the left, depending on the manufacturer).
+ Beware of the L293D position on the breadboard. It should be facing the back wheels (the front part of the driver has a little dot carved in the center / slighly to the left, depending on the manufacturer).
  
 ![image](https://user-images.githubusercontent.com/79463256/216841415-4aef1ac6-f953-48ca-ae5c-95d4023e14ee.png)
 
