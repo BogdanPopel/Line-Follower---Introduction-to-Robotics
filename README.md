@@ -98,3 +98,7 @@ The auto calibration happens after power is given to the board and it works only
     - same thing, the other way around
     
 After the calibration, the movement is controlled with the use of [PID](https://www.teachmemicro.com/arduino-pid-control-tutorial/). In the code, the values used for the PID Control vary based on the error (the error indicates where the sensor is compared to the line that it follows) recorded by the front sensor. We came up with those values by trial and error and as mentioned above, it is the only way to properly adjust a Line Follower project.
+
+## [Final Product (video)](https://youtu.be/vzj0kBcIzTA)
+  
+  The orientation of the video is the wrong one, but the video from a different angle got lost and this is everything i could find.. The first lap is the fastest and after the third timed lap, a back wheel falls off due to an imperfection in the wheel where it connects to the motor.
