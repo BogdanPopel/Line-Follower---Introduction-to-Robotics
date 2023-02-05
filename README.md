@@ -95,4 +95,6 @@ After the calibration, the movement is controlled with the use of [PID](https://
 
 ## [Final Product (video)](https://youtu.be/vzj0kBcIzTA)
   
-  The orientation of the video is the wrong one, but the video from a different angle got lost and this is everything i could find.. The first lap is the fastest and after the third timed lap, a back wheel falls off due to an imperfection in the wheel where it connects to the motor.
+  The orientation of the video is the wrong one, but the video from a different angle got lost and this is everything i could find.. The first lap is the fastest (not filmed) and after the third timed lap, a back wheel falls off due to an imperfection in the wheel where it connects to the motor, which is seen in the video linked above. Anyway, it gives an idea on how it performs. While it is not perfect, it was alright and pretty close to the target of 20 seconds.
+  
+  It's a really fun project and i highly recommend building one at home as it's not that difficult and definitely worth the time and the money.
