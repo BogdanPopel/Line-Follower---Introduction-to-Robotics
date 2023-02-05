@@ -85,4 +85,16 @@ We’ll decide on what “fast” means and how much exact grading for each. (2.
 
 As requirements, the line follower has to calibrate automatically upon starting (giving it power) and finish a line follower course that our professor designed (we only saw it near the end of the day, when testing began). The time we had to beat for a maximum score was 20 seconds and it was timed automatically using a sensor which detected the car passing the finish line completely, so dangling wires in the back could mean a disadvantage and by F1 standards that wouldn't be acceptable. The Line Follower was called Haas so it's only natural that high standards are of utmost importance.
 
-The results, with the provided [code]()
+The results, with the provided [code](https://github.com/BogdanPopel/Line-Follower---Introduction-to-Robotics/blob/main/LineFollower.ino) recorded a best lap time of 20.7 seconds, which is close to the target of 10 seconds.
+
+The biggest challenge when dealing with a line follower coding task is managing to to find the best PID values, taking in account that all DC motors and other components differ in output power, range of motion and various other aspects that affect the real world results of a code.
+
+The auto calibration happens after power is given to the board and it works only if by doing a 360, the sensor passes over a black line. Otherwise, it will spin continously and after the calibration is over, it will just drive into the first wall. If calibration starts and the sensor detects a line to follow, it will alternate power to the wheels (one spins forward and the other backwards -> this is done to maximise the speed of the moves) depending on the values that the sensor reads. For example, for:
+  - start a left to right motion:
+    - the right wheel spins backwards and the left wheel forward
+      - after the sensor has fully passed the line
+      - progressively slow down the wheels and change the direction of the speed for both, which should start a right to left motion 
+  - start a right to left motion.
+    - same thing, the other way around
+    
+After the calibration, the movement is controlled with the use of [PID](https://www.teachmemicro.com/arduino-pid-control-tutorial/). In the code, the values used for the PID Control vary based on the error (the error indicates where the sensor is compared to the line that it follows) recorded by the front sensor. We came up with those values by trial and error and as mentioned above, it is the only way to properly adjust a Line Follower project.
